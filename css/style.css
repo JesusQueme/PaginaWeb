@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: auto;
 }
 
 html {
@@ -390,7 +390,7 @@ button {
 
 .discountimg {
     width: 200px;
-    justify-self: center;
+    margin: auto auto !important;
 }
 
 /*NEW*/
@@ -461,6 +461,7 @@ button {
     position: absolute;
     bottom: 0;
     right: -3rem;
+    
 }
 
 .newicon {
@@ -725,17 +726,19 @@ button {
     }
 
     .discountcontainer {
-        grid-template-columns: repeat(2, max-content);
+        
         justify-content: center;
         align-items: center;
         column-gap: 3rem;
-        padding: 3rem 0;
+        padding: 3rem auto;
+       
         border-radius: 3rem;
     }
 
     .discountimg {
         width: 350px;
         order: -1;
+        justify-self: center;
     }
 
     .discountdata {
@@ -816,7 +819,7 @@ button {
         width: 350px;
     }
     .aboutdescription {
-        padding-right: 2rem;
+        margin-left:2rem;
     }
     .productcontainer {
         gap: 3.5rem;
